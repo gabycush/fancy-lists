@@ -38,14 +38,16 @@ function addNew(name){
   favesList.unshift(item)
   const special = document.createElement('button')
   special.innerHTML = 'Promote'
+  const remove = document.createElement('button')
+  remove.innerHTML = 'Delete'
   const listDisplay = document.querySelector('#list-display')
-  const newItem = listItems(name, special)
+  const newItem = listItems(name, special, remove)
   listDisplay.insertBefore(newItem, listDisplay.childNodes[0])
   newItem.style.backgroundColor = special.addEventListener('click', getSpecial)
 }
 
-function listItems(item, special){
+function listItems(item, special, remove){
   const newItem = document.createElement('div')
-  newItem.innerHTML = `${item} ${special.outerHTML}`
+  newItem.innerHTML = `${item} ${remove.outerHTML} ${special.outerHTML}`
   return newItem
 }
