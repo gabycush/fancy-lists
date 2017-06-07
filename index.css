@@ -1,0 +1,57 @@
+body {
+  padding: 1rem 4rem;
+}
+
+h2{
+  font-size:1.5rem;
+}
+
+section > div {
+  width: 80%;
+  margin: 1rem auto;
+}
+
+#list-display div {
+  border: 1px solid black;
+  width:100%;
+  padding: 1rem 2rem 1rem .5rem;
+  margin-bottom:-1rem;
+
+}
+div > button{
+  float:right;
+  border: 1px solid gold;
+  padding: .5rem;
+  margin-top:-.3rem;
+}
+
+form {
+  margin-top: 50px;
+}
+
+dl {
+  padding: 15px 10px;
+}
+
+dl > li {
+  list-style: none;
+}
+
+dt, dd {
+  display: inline-block;
+  vertical-align: top;
+  width: 48%;
+}
+
+dl:nth-of-type(even) {
+  background-color: WhiteSmoke;
+}
+
+
+
+  section::after {
+    clear: both;
+    content: "";
+    display: table;
+  }
+}
